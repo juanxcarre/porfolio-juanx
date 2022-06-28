@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Futuro CSS -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!--fila de logo + nav-->
+<header class="header">
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html" >INICIO</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="#" class="menu-active">CERTIFICADOS</a></li>
+            <li><a href="proyectos .html">PROYECTOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- cierre de fila logo + nav -->
+<main>
+    <section id="contentitemscarrusel" >
+        <div class="itemcarrucel" id="itemcarrucel-1">
+            <div class="tarjetacarrucel">
+                <img class="certificado" src="../imagenes/certificado ux ui.png" alt="ux/ui">
+                <img class="certificado" src="../imagenes/certificado ps ai.png" alt="ps/ai">
+            </div>
+            <div class="flechacarrucel">
+                <a href="#itemcarrucel-2">
+                    <i><img src="../imagenes/flecha izquierada.png" alt=""></i>
+                </a>
+                <a href="#itemcarrucel-3">
+                    <i><img src="../imagenes/fecha derecha.png" alt=""></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemcarrucel" id="itemcarrucel-2">
+            <div class="tarjetacarrucel">
+                <img class="certificado" src="../imagenes/618bec389596da0077020e07.png" alt="ux/ui">
+                <img class="certificado" src="../imagenes/certificado polotic.jpg" alt="ps/ai">
+            </div>
+            <div class="flechacarrucel">
+                <a href="#itemcarrucel-3">
+                    <i><img src="../imagenes/flecha izquierada.png" alt=""></i>
+                </a>
+                <a href="#itemcarrucel-1">
+                    <i><img src="../imagenes/fecha derecha.png" alt=""></i>
+                </a>
+            </div>
+        </div>
+        <div class="itemcarrucel" id="itemcarrucel-3">
+            <div class="tarjetacarrucel">
+                <img class="certificado" src="../imagenes/certificado tiempo.png" alt="ux/ui">
+                <img class="certificado" src="../imagenes/cetificado de coorecioines.png" alt="ps/ai">
+            </div>
+            <div class="flechacarrucel">
+                <a href="#itemcarrucel-1">
+                    <i><img src="../imagenes/flecha izquierada.png" alt=""></i>
+                </a>
+                <a href="#itemcarrucel-2">
+                    <i><img src="../imagenes/fecha derecha.png" alt=""></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer" id="footer">
+    <h4> © - Desarrollado por Juan Cruz Carreño Mendoza</h4>
+    <ul class="footer">
+        <li><a href="https://www.instagram.com/juanx.carre/"><img class="imagenfooter" src="../imagenes/logo instagram.png"></a></li>
+        <li><a href="https://www.behance.net/juancrcarreo"><img class="imagenfooter" src="../imagenes/logo behanca.png"> </a></li>
+        <li><a href="https://www.linkedin.com/in/juan-cruz-carre%C3%B1o-mendoza/"><img class="imagenfooter" src="../imagenes/logo linkedin.png"></a></li>
+    </ul> 
+</footer>    
+<script>
+        // Efecto scroll - Header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header')
+            const about = document.querySelector('.hero__about')
+
+            header.classList.toggle('header-scroll', window.scrollY > 0)
+            about.classList.toggle('hero__about-scroll', window.scrollY > 100)
+
+            
+        })
+    </script>
+</body>
+</html>

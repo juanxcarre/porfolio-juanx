@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Futuro CSS -->
+    <link rel="stylesheet" href="../PORFOLIO JUANX/styles.css">
+</head>
+<body>
+    <!--fila de logo + nav-->
+<header class="header">
+    <nav class="menu">
+        <ul>
+            <li><a href="#" class="menu-active" >INICIO</a></li>
+            <li><a href="../PORFOLIO JUANX/views/skills.html">SKILLS</a></li>
+            <li><a href="../PORFOLIO JUANX/views/certificados .html">CERTIFICADOS</a></li>
+            <li><a href="../PORFOLIO JUANX/views/proyectos .html">PROYECTOS</a></li>
+            <li><a href="../PORFOLIO JUANX/views/contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- cierre de fila logo + nav -->
+<main>
+    <section class="hero">
+        <div class="texto">
+            <h4>Hola!! Soy Juan Cruz</h4>
+            <h2>UX/UI Designer</h2>
+            <p>
+                Estudiante de Artes Visuales y Productor Audio Visual 
+            <br>
+                Actualmente enfocado en el Diseño Web,
+                Diseño UX UI, Publicidad,
+                Marketing, Recursos Humanos y Arte.
+            <br>
+                Mi Objetivo laboral es desempeñarme 
+                como Diseñador Grafico / UX UI.
+            </p>
+        </div>
+        <div>
+            <img class="imagen-flex" src="../PORFOLIO JUANX/imagenes/ilustracion jx.png" alt="">
+        </div>
+        <div>
+            <input class="botoncv" type="button" value="Descargar CV">
+        </div>
+    </section>
+</main>
+<footer class="footer" id="footer">
+    <h4> © - Desarrollado por Juan Cruz Carreño Mendoza</h4>
+    <ul class="footer">
+        <li><a href="https://www.instagram.com/juanx.carre/"><img class="imagenfooter" src="../PORFOLIO JUANX/imagenes/logo instagram.png"></a></li>
+        <li><a href="https://www.behance.net/juancrcarreo"><img class="imagenfooter" src="../PORFOLIO JUANX/imagenes/logo behanca.png"> </a></li>
+        <li><a href="https://www.linkedin.com/in/juan-cruz-carre%C3%B1o-mendoza/"><img class="imagenfooter" src="../PORFOLIO JUANX/imagenes/logo linkedin.png"></a></li>
+    </ul> 
+</footer>    
+<script>
+        // Efecto scroll - Header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header')
+            const about = document.querySelector('.hero__about')
+
+            header.classList.toggle('header-scroll', window.scrollY > 0)
+            about.classList.toggle('hero__about-scroll', window.scrollY > 100)
+
+            
+        })
+    </script>
+</body>
+</html>
